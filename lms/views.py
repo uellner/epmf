@@ -5,4 +5,8 @@ from django.http import HttpResponse
 
 
 def index(request):
-    return HttpResponse("Hello, world. You're at the EPMF index.")
+    return render(request, 'index.html')
+
+
+def dashboard(request):
+    return render(request, 'app/dashboard.html')
